@@ -28,11 +28,11 @@ from .gamessparser import GAMESS
 from .gamessukparser import GAMESSUK
 from .gaussianparser import Gaussian
 from .jaguarparser import Jaguar
-from .molproparser import Molpro
+#from .molproparser import Molpro
 from .nwchemparser import NWChem
 from .orcaparser import ORCA
 from .psiparser import Psi
-from .qchemparser import QChem
+#from .qchemparser import QChem
 
 try:
     from ..bridge import cclib2openbabel
@@ -61,12 +61,12 @@ triggers = [
     (GAMESSUK,  ["G A M E S S - U K"],                              True),
     (Gaussian,  ["Gaussian, Inc."],                                 True),
     (Jaguar,    ["Jaguar"],                                         True),
-    (Molpro,    ["PROGRAM SYSTEM MOLPRO"],                          True),
-    (Molpro,    ["1PROGRAM"],                                       False),
+#    (Molpro,    ["PROGRAM SYSTEM MOLPRO"],                          True),
+#    (Molpro,    ["1PROGRAM"],                                       False),
     (NWChem,    ["Northwest Computational Chemistry Package"],      True),
     (ORCA,      ["O   R   C   A"],                                  True),
     (Psi,       ["PSI", "Ab Initio Electronic Structure"],          True),
-    (QChem,     ["A Quantum Leap Into The Future Of Chemistry"],    True),
+#    (QChem,     ["A Quantum Leap Into The Future Of Chemistry"],    True),
 
 ]
 

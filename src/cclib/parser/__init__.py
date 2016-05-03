@@ -25,11 +25,11 @@ from .gamessparser import GAMESS
 from .gamessukparser import GAMESSUK
 from .gaussianparser import Gaussian
 from .jaguarparser import Jaguar
-from .molproparser import Molpro
+#from .molproparser import Molpro
 from .nwchemparser import NWChem
 from .orcaparser import ORCA
 from .psiparser import Psi
-from .qchemparser import QChem
+#from .qchemparser import QChem
 
 # This allow users to type:
 #   from cclib.parser import ccopen
