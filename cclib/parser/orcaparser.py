@@ -802,7 +802,7 @@ class ORCA(logfileparser.Logfile):
                 line = next(inputfile)
 
         # Parse the various absorption spectra for TDDFT and ROCIS.
-        if ('ABSORPTION SPECTRUM' in line or 'ELECTRIC DIPOLE' in line) and not 'SOC' in line:
+        if ('ABSORPTION SPECTRUM' in line and 'ELECTRIC DIPOLE' in line) and not 'SOC' in line:
             # CASSCF has an anomalous printing of ABSORPTION SPECTRUM.
             if line[:-1] == 'ABSORPTION SPECTRUM':
                 return
